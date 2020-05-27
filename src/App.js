@@ -4,7 +4,7 @@ import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
 
-import styles from './App.css';
+import styles from './App.module.css';
 import {fetchData} from './api/config';
 
 class App extends Component{
@@ -22,8 +22,8 @@ class App extends Component{
         return(
             <div className={styles.container}>
                 <Cards data={data}/>
-                <Chart />
                 <CountryPicker />
+                <Chart />
             </div>
         )
     }
