@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(215deg, rgba(115, 176, 241, 0) ,rgba(115, 176, 241, .5));
-    font-family: "Lato", sans-serif;
+    font-family: sans-serif;
 }
 .container{
     display: flex;
@@ -11,4 +11,13 @@ body{
 .image{
     width: 370px;
     margin-top: 50px;
+}
+
+@media (max-width: 770px){
+    .container{
+        margin: 0 10%
+    }
+    .image{
+        width: 100% 
+    }
 }
